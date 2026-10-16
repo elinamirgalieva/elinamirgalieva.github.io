@@ -11,6 +11,17 @@
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Senior marketing and communications strategist. 9 years building brands across luxury, beauty, tech and fintech in the UK, Middle East and Asia.">
+<link rel="canonical" href="https://elinamirgalieva.com/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://elinamirgalieva.com/">
+<meta property="og:title" content="Elina Mirgalieva | Marketing &amp; Communications Strategist">
+<meta property="og:description" content="Brand strategy, consumer research and communications for luxury, beauty and tech. Selected cases inside.">
+<meta property="og:image" content="https://elinamirgalieva.com/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Elina Mirgalieva, Selected Cases 2026">
+<meta name="twitter:card" content="summary_large_image">
 <title>Elina Mirgalieva — Marketing & Communications Strategist</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
@@ -420,7 +431,7 @@ footer{background:var(--dark);padding:28px 60px;display:flex;justify-content:spa
     <li><a href="#web3">Web3</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <ul class="nav-links" id="nav-ru">
+  <ul class="nav-links" id="nav-ru" lang="ru">
     <li><a href="#ru-about">Обо мне</a></li>
     <li><a href="#ru-work">Экспертиза</a></li>
     <li><a href="#ru-web3">Web3</a></li>
@@ -444,7 +455,7 @@ footer{background:var(--dark);padding:28px 60px;display:flex;justify-content:spa
     <li><a href="#web3" onclick="closeMobileNav()">Web3</a></li>
     <li><a href="#contact" onclick="closeMobileNav()">Contact</a></li>
   </ul>
-  <ul id="nav-ru-mobile">
+  <ul id="nav-ru-mobile" lang="ru">
     <li><a href="#ru-about" onclick="closeMobileNav()">Обо мне</a></li>
     <li><a href="#ru-work" onclick="closeMobileNav()">Экспертиза</a></li>
     <li><a href="#ru-web3" onclick="closeMobileNav()">Web3</a></li>
@@ -711,7 +722,7 @@ footer{background:var(--dark);padding:28px 60px;display:flex;justify-content:spa
 </div><!-- /en -->
 
 <!-- ===== RU ===== -->
-<div id="ru">
+<div id="ru" lang="ru">
 
   <section class="hero">
     <div class="hero-bg-letter">E</div>
@@ -976,6 +987,7 @@ footer{background:var(--dark);padding:28px 60px;display:flex;justify-content:spa
 
 <script>
   function setLang(l){
+    document.documentElement.lang=l;
     document.getElementById('en').style.display=(l==='en')?'block':'none';
     document.getElementById('ru').style.display=(l==='ru')?'block':'none';
     document.getElementById('nav-en').classList.toggle('active-nav',l==='en');
